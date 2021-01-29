@@ -1,0 +1,14 @@
+<div id="openNote">
+    <button (click) = "close()" id="close" class="fa fa-times"></button>
+    <br><br><br>
+    <button id="edit" class="fa fa-pencil"></button>
+    <div id="openNoteItem">
+        <textarea type="text" id="openNoteContent" value="" class="note"></textarea>
+    </div>
+    <button (click) = "incrementLikeCount()" id="like" class="fa fa-thumbs-up"></button>
+    <p id="openNoteLike">+</p>
+    <button (click) = "deleteNote()" id="delete" class="fa fa-trash"></button>
+</div>
+<div (click) = "close()" id="blur">
+
+</div>

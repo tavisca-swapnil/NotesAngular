@@ -1,0 +1,120 @@
+#filter{
+    width:30%;
+    font-family: cursive;
+    height: 25px;
+    font-size: 90%;
+    margin-top: 10px;
+}
+
+#header{
+    font-family: cursive;
+    height : 50px;
+    margin: 0 20 0 20;
+    padding-top: 30px;
+}
+
+#sections, #sort{
+    font-family: cursive;
+    height: 25px;
+    margin: 10px;
+}
+
+#dropdowns{
+    float: right;
+    margin-right: 10px;
+}
+
+#main{
+    border:solid;
+    border-color: #696969;
+    border-width: 10px;
+    border-radius: 5px;
+    min-height: 300px;
+    width : 90%;
+    margin :20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+}
+
+#name, .sectionHeader{
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.sectionHeader{
+    margin-top: 0px;
+}
+
+#section-Container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 10px;
+    grid-gap: 20px;
+    min-height: 500px;
+}
+
+.section-item{
+    position: relative;
+    min-height: 50px;
+}
+
+#plusIcon, .fas, .fa-plus-circle{
+    padding: 2px;
+    color: #83bc2d;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.note-Container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+    grid-gap: 5px;
+}
+
+.note-item{
+    position: relative;
+    min-height: 110px;
+    max-height: 110px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px grey;
+    animation: mymove 0.6s;
+}
+
+@keyframes mymove {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+.left,.leftOpenNote{
+    background-color: #c3ee8f;
+}
+
+.mid,.midOpenNote{
+    background-color: #feff88;
+}
+
+.right,.rightOpenNote{
+    background-color: #eed3ff;
+}
+
+.note{
+    word-break: break-all;
+    font-family: cursive;
+    font-size: smaller;
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+    max-height: inherit;
+}
+
+.likesCounter{
+    margin: 2px 6px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: smaller;
+}

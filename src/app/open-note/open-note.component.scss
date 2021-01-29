@@ -1,0 +1,105 @@
+#openNote{
+    height: 220px;
+    width:300px;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    padding-right: 20px;
+    box-shadow: 0px 4px 20px 3px;
+    z-index: 3;
+    display:none;
+}
+
+#close{
+    color:black;
+    float:right;
+    background-color: inherit;
+    margin-top: 4px;
+}
+
+#openNoteItem{
+    height:150px;
+    width:270px;
+    border: black solid 1px;
+    float: right;
+    margin-top: -20px;
+    background-color: inherit;
+}
+
+#edit{
+    color: black;
+    position: absolute;
+    top: 40px;
+    left:2px;
+    background-color: inherit;
+}
+
+#delete{
+    position: absolute;
+    bottom: 2px;
+    font-size: x-large;
+    right: 5px;
+    color: black;
+    background-color: inherit;
+}
+
+#like{
+    color: black;
+    position: absolute;
+    font-size: x-large;
+    left: 5px;
+    bottom: 4px;
+    background-color: inherit;
+}
+
+#openNoteLike{
+    color: black;
+    position: absolute;
+    font-size: x-large;
+    left: 35px;
+    bottom: 0px;
+    margin: 4px;
+}
+
+#openNoteContent{
+    height: 100%;
+    width: inherit;
+    word-break: break-all;
+    text-align: center;
+    overflow: hidden auto;
+    box-shadow: inset 0.3px 0.3px 8px #000;
+    background-color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+#blur{
+    width:100%;
+    height:100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    opacity: 0.8;
+    display: none;
+}
+
+.fa{
+    border: none;
+}
+
+.left,.leftOpenNote{
+    background-color: #c3ee8f;
+}
+
+.mid,.midOpenNote{
+    background-color: #feff88;
+}
+
+.right,.rightOpenNote{
+    background-color: #eed3ff;
+}

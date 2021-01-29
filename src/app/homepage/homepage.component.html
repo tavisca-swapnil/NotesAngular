@@ -1,0 +1,41 @@
+<div id = "header">
+    <input type="text" id="filter" placeholder="🔍start typing to filter stickies">
+    <div id="dropdowns">
+        <label for="sections">View Section</label>
+        <select id="sections" name="sections">
+            <option value="All">All Sections</option>
+            <option value="1">Section 1</option>
+            <option value="2">Section 2</option>
+            <option value="3">Section 3</option>
+        </select>
+        <label for="sort">Sort by</label>
+        <select id="sort" name="sort">
+            <option value="1">Created Time</option>
+            <option value="2">Votes</option>
+        </select>
+    </div>
+</div>
+<div id = "main">
+    <p id = "name">Swapnil Sharma</p>
+    <div id="section-Container">
+        <div class="section-item">
+            <p class = "sectionHeader">Title 1 <button (click) = "addNote('left')" id="addLeft" class="plusIcon fa fa-plus-circle"></button></p>
+            <div id="leftSection" class="note-Container">
+
+            </div>
+        </div>
+        <div class="section-item">
+            <p class = "sectionHeader">Title 2 <button (click) = "addNote('mid')" class="plusIcon fa fa-plus-circle" id="addMid"></button></p>
+            <div id="midSection" class="note-Container">
+                
+            </div>
+        </div>
+        <div class="section-item">
+            <p class = "sectionHeader">Title 3 <button (click) = "addNote('right')" class="plusIcon fa fa-plus-circle" id="addRight"></button></p>
+            <div id="rightSection" class="note-Container">
+
+            </div>
+        </div>
+    </div>
+</div>
+<app-open-note></app-open-note>
